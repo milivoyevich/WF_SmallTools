@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="85964915-75a2-403c-9978-bca5ffa9e7ad" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57981/ServiceTools.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceTools.wsdl" MetadataType="Wsdl" ID="f19cf26a-bce0-4066-b074-d7c0baf92462" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?wsdl" />
+    <MetadataFile FileName="ServiceTools.disco" MetadataType="Disco" ID="3ad7233b-5a8e-44f4-a8cc-88da4f49fbe3" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?disco" />
+    <MetadataFile FileName="ServiceTools.xsd" MetadataType="Schema" ID="acc68833-1313-4592-839e-97a7947a71c9" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
