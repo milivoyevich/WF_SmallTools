@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace WF_SmallTools
+namespace WcfServiceTools
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IServiceTools" in both code and config file together.
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IServiceTools
+    public interface IService1
     {
         [OperationContract]
         void DoWork();
