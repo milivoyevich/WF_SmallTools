@@ -34,7 +34,12 @@
             this.tcExamples = new System.Windows.Forms.TabControl();
             this.tpProcedure = new System.Windows.Forms.TabPage();
             this.tpExample = new System.Windows.Forms.TabPage();
+            this.dgProcedure = new System.Windows.Forms.DataGrid();
+            this.btnTabela = new System.Windows.Forms.Button();
+            this.btnDataSet = new System.Windows.Forms.Button();
             this.tcExamples.SuspendLayout();
+            this.tpProcedure.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgProcedure)).BeginInit();
             this.SuspendLayout();
             // 
             // msGlavni
@@ -68,6 +73,9 @@
             // tpProcedure
             // 
             this.tpProcedure.BackColor = System.Drawing.Color.Gray;
+            this.tpProcedure.Controls.Add(this.btnDataSet);
+            this.tpProcedure.Controls.Add(this.btnTabela);
+            this.tpProcedure.Controls.Add(this.dgProcedure);
             this.tpProcedure.Location = new System.Drawing.Point(4, 22);
             this.tpProcedure.Name = "tpProcedure";
             this.tpProcedure.Padding = new System.Windows.Forms.Padding(3);
@@ -81,9 +89,38 @@
             this.tpExample.Location = new System.Drawing.Point(4, 22);
             this.tpExample.Name = "tpExample";
             this.tpExample.Padding = new System.Windows.Forms.Padding(3);
-            this.tpExample.Size = new System.Drawing.Size(626, 427);
+            this.tpExample.Size = new System.Drawing.Size(635, 427);
             this.tpExample.TabIndex = 1;
             this.tpExample.Text = "Пример 2";
+            // 
+            // dgProcedure
+            // 
+            this.dgProcedure.DataMember = "";
+            this.dgProcedure.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.dgProcedure.Location = new System.Drawing.Point(50, 62);
+            this.dgProcedure.Name = "dgProcedure";
+            this.dgProcedure.Size = new System.Drawing.Size(510, 287);
+            this.dgProcedure.TabIndex = 0;
+            // 
+            // btnTabela
+            // 
+            this.btnTabela.Location = new System.Drawing.Point(454, 375);
+            this.btnTabela.Name = "btnTabela";
+            this.btnTabela.Size = new System.Drawing.Size(106, 23);
+            this.btnTabela.TabIndex = 1;
+            this.btnTabela.Text = "Врати Табелу";
+            this.btnTabela.UseVisualStyleBackColor = true;
+            this.btnTabela.Click += new System.EventHandler(this.btnTabela_Click);
+            // 
+            // btnDataSet
+            // 
+            this.btnDataSet.Location = new System.Drawing.Point(50, 375);
+            this.btnDataSet.Name = "btnDataSet";
+            this.btnDataSet.Size = new System.Drawing.Size(106, 23);
+            this.btnDataSet.TabIndex = 2;
+            this.btnDataSet.Text = "Врати Датасет";
+            this.btnDataSet.UseVisualStyleBackColor = true;
+            this.btnDataSet.Click += new System.EventHandler(this.btnDataSet_Click);
             // 
             // Test
             // 
@@ -101,6 +138,8 @@
             this.Text = "Test";
             this.Load += new System.EventHandler(this.Test_Load);
             this.tcExamples.ResumeLayout(false);
+            this.tpProcedure.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgProcedure)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +152,9 @@
         private System.Windows.Forms.TabControl tcExamples;
         private System.Windows.Forms.TabPage tpProcedure;
         private System.Windows.Forms.TabPage tpExample;
+        private System.Windows.Forms.Button btnDataSet;
+        private System.Windows.Forms.Button btnTabela;
+        private System.Windows.Forms.DataGrid dgProcedure;
     }
 }
 

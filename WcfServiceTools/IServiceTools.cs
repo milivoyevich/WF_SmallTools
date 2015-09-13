@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data;
 
 namespace WcfServiceTools
 {
@@ -13,5 +14,11 @@ namespace WcfServiceTools
     {
         [OperationContract]
         void DoWork();
-    }
+
+        [OperationContract]
+        DataTable VratiTablu(string StoreProc, Dictionary<string, object> SqlParametri);
+
+        [OperationContract]
+        DataSet VratiSet(string StoreProc, Dictionary<string, object> SqlParametri);
+    }    
 }
