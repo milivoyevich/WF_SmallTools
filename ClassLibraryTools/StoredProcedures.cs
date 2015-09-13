@@ -7,5 +7,6 @@ namespace ClassLibraryTools
 {
     public class StoredProcedures
     {
+
     }
 }
