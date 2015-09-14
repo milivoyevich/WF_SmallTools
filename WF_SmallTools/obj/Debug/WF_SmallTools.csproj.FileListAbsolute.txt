@@ -1,0 +1,13 @@
+C:\Users\Dell\Source\Repos\SmallTools\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe.config
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe.config
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\System.Net.Http.dll
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Test.resources
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Properties.Resources.resources
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csproj.GenerateResource.Cache
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.exe
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\ClassLibraryTools.dll
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\ClassLibraryTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csprojResolveAssemblyReference.cache

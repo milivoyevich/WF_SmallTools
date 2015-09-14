@@ -1,0 +1,8 @@
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\bin\WcfServiceTools.dll.config
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\bin\WcfServiceTools.dll
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\bin\WcfServiceTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\obj\Debug\WcfServiceTools.dll
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\obj\Debug\WcfServiceTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\bin\ClassLibraryTools.dll
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\bin\ClassLibraryTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WcfServiceTools\obj\Debug\WcfServiceTools.csprojResolveAssemblyReference.cache
