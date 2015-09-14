@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF_SmallTools", "WF_SmallTools.csproj", "{43E58E68-7C7D-4159-A861-47B898850E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTools", "..\WcfServiceTools\WcfServiceTools.csproj", "{FBCD3170-6C98-4FAF-AC43-528211A1D2C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryTools", "..\ClassLibraryTools\ClassLibraryTools.csproj", "{F3149E47-9A8E-49D6-8F5D-B73807132DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E58E68-7C7D-4159-A861-47B898850E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E58E68-7C7D-4159-A861-47B898850E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E58E68-7C7D-4159-A861-47B898850E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E58E68-7C7D-4159-A861-47B898850E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCD3170-6C98-4FAF-AC43-528211A1D2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCD3170-6C98-4FAF-AC43-528211A1D2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCD3170-6C98-4FAF-AC43-528211A1D2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCD3170-6C98-4FAF-AC43-528211A1D2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3149E47-9A8E-49D6-8F5D-B73807132DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3149E47-9A8E-49D6-8F5D-B73807132DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3149E47-9A8E-49D6-8F5D-B73807132DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3149E47-9A8E-49D6-8F5D-B73807132DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

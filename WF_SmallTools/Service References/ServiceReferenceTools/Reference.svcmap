@@ -21,9 +21,13 @@
     <MetadataSource Address="http://localhost:57981/ServiceTools.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
+    <MetadataFile FileName="ServiceTools1.xsd" MetadataType="Schema" ID="d8c0641c-1627-4312-a606-0df513b972b8" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?xsd=xsd4" />
     <MetadataFile FileName="ServiceTools.wsdl" MetadataType="Wsdl" ID="f19cf26a-bce0-4066-b074-d7c0baf92462" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?wsdl" />
-    <MetadataFile FileName="ServiceTools.disco" MetadataType="Disco" ID="3ad7233b-5a8e-44f4-a8cc-88da4f49fbe3" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?disco" />
     <MetadataFile FileName="ServiceTools.xsd" MetadataType="Schema" ID="acc68833-1313-4592-839e-97a7947a71c9" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceTools.disco" MetadataType="Disco" ID="3ad7233b-5a8e-44f4-a8cc-88da4f49fbe3" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?disco" />
+    <MetadataFile FileName="ServiceTools11.xsd" MetadataType="Schema" ID="7324688c-3c96-428a-af41-fb475161be24" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceTools12.xsd" MetadataType="Schema" ID="0a87ff2c-6aef-4011-87e9-8f57a528b5fe" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceTools13.xsd" MetadataType="Schema" ID="38323e25-1b95-41fc-a671-2396aa8fc8c5" SourceId="1" SourceUrl="http://localhost:57981/ServiceTools.svc?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

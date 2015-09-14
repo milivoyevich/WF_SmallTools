@@ -17,6 +17,12 @@ namespace WF_SmallTools.ServiceReferenceTools {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceTools/DoWork", ReplyAction="http://tempuri.org/IServiceTools/DoWorkResponse")]
         void DoWork();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceTools/VratiTablu", ReplyAction="http://tempuri.org/IServiceTools/VratiTabluResponse")]
+        System.Data.DataTable VratiTablu(string StoreProc, System.Collections.Generic.Dictionary<string, object> SqlParametri);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceTools/VratiSet", ReplyAction="http://tempuri.org/IServiceTools/VratiSetResponse")]
+        System.Data.DataSet VratiSet(string StoreProc, System.Collections.Generic.Dictionary<string, object> SqlParametri);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -48,6 +54,14 @@ namespace WF_SmallTools.ServiceReferenceTools {
         
         public void DoWork() {
             base.Channel.DoWork();
+        }
+        
+        public System.Data.DataTable VratiTablu(string StoreProc, System.Collections.Generic.Dictionary<string, object> SqlParametri) {
+            return base.Channel.VratiTablu(StoreProc, SqlParametri);
+        }
+        
+        public System.Data.DataSet VratiSet(string StoreProc, System.Collections.Generic.Dictionary<string, object> SqlParametri) {
+            return base.Channel.VratiSet(StoreProc, SqlParametri);
         }
     }
 }

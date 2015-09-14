@@ -3,6 +3,10 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:57981/ServiceTools.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57981/ServiceTools.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57981/ServiceTools.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:57981/ServiceTools.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:57981/ServiceTools.svc?xsd=xsd4" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IServiceTools_DoWork_InputMessage">
@@ -11,16 +15,54 @@
   <wsdl:message name="IServiceTools_DoWork_OutputMessage">
     <wsdl:part name="parameters" element="tns:DoWorkResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceTools_VratiTablu_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiTablu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTools_VratiTablu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiTabluResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTools_VratiSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSet" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTools_VratiSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSetResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceTools">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceTools/DoWork" message="tns:IServiceTools_DoWork_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceTools/DoWorkResponse" message="tns:IServiceTools_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiTablu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTools/VratiTablu" message="tns:IServiceTools_VratiTablu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTools/VratiTabluResponse" message="tns:IServiceTools_VratiTablu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTools/VratiSet" message="tns:IServiceTools_VratiSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTools/VratiSetResponse" message="tns:IServiceTools_VratiSet_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceTools" type="tns:IServiceTools">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="DoWork">
       <soap:operation soapAction="http://tempuri.org/IServiceTools/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiTablu">
+      <soap:operation soapAction="http://tempuri.org/IServiceTools/VratiTablu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiSet">
+      <soap:operation soapAction="http://tempuri.org/IServiceTools/VratiSet" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
