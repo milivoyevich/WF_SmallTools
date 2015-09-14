@@ -13,6 +13,8 @@ namespace WcfServiceTools
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServiceTools.svc or ServiceTools.svc.cs at the Solution Explorer and start debugging.
     public class ServiceTools : IServiceTools
     {
+        SqlConnection konekcija = new SqlConnection(System.Configuration.ConfigurationManager.AppSettings["konekcija_lokal"]);
+
         public void DoWork()
         {
             Console.WriteLine("Juhuu");
@@ -20,7 +22,7 @@ namespace WcfServiceTools
         public DataTable VratiTablu(string StoreProc, Dictionary<string, object> SqlParametri)
         {
             DataTable tabela = new DataTable(StoreProc);
-            SqlConnection konekcija = new SqlConnection(System.Configuration.ConfigurationManager.AppSettings["konekcija_na_bazu"]);
+          
             using (konekcija)
             {
                 SqlCommand komanda = new SqlCommand();
@@ -41,7 +43,6 @@ namespace WcfServiceTools
         public DataSet VratiSet(string StoreProc, Dictionary<string, object> SqlParametri)
         {
             DataSet ds = new DataSet();
-            SqlConnection konekcija = new SqlConnection(System.Configuration.ConfigurationManager.AppSettings["konekcija_na_bazu"]);
             using (konekcija)
             {
                 SqlCommand komanda = new SqlCommand();

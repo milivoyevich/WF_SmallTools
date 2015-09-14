@@ -12,3 +12,11 @@ E:\Dokumenti\Visual Studio 2015\Projects\WF_SmallTools-master\WF_SmallTools\obj\
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe.config
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.exe
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\ClassLibraryTools.dll
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\ClassLibraryTools.pdb
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csprojResolveAssemblyReference.cache
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Test.resources
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Properties.Resources.resources
+D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csproj.GenerateResource.Cache
