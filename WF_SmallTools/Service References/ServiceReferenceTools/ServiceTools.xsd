@@ -65,4 +65,19 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="VratiObjekat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StoreProc" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SqlParametri" nillable="true" type="q3:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiObjekatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VratiObjekatResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

@@ -32,10 +32,11 @@ namespace WcfServiceTools
                 komanda.Connection = konekcija;
                 komanda.CommandText = StoreProc;
                 komanda.Parameters.Clear();
-                foreach (KeyValuePair<string, object> sp in SqlParametri)
-                {
-                    komanda.Parameters.AddWithValue(sp.Key, sp.Value);
-                }
+                if (SqlParametri != null)
+                    foreach (KeyValuePair<string, object> sp in SqlParametri)
+                    {
+                        komanda.Parameters.AddWithValue(sp.Key, sp.Value);
+                    }
                 da.Fill(tabela);
             }
             return tabela;
@@ -52,13 +53,35 @@ namespace WcfServiceTools
                 komanda.Connection = konekcija;
                 komanda.CommandText = StoreProc;
                 komanda.Parameters.Clear();
-                foreach (KeyValuePair<string, object> sp in SqlParametri)
-                {
-                    komanda.Parameters.AddWithValue(sp.Key, sp.Value);
-                }
+                if (SqlParametri != null)
+                    foreach (KeyValuePair<string, object> sp in SqlParametri)
+                    {
+                        komanda.Parameters.AddWithValue(sp.Key, sp.Value);
+                    }
                 da.Fill(ds);
             }
             return ds;
+        }
+        public object VratiObjekat(string StoreProc, Dictionary<string, object> SqlParametri)
+        {
+            object dObj = new object();
+            using (konekcija)
+            {
+                SqlCommand komanda = new SqlCommand();
+                komanda.CommandType = CommandType.StoredProcedure;
+                komanda.Connection = konekcija;
+                komanda.CommandText = StoreProc;
+                komanda.Parameters.Clear();
+                if (SqlParametri != null)
+                    foreach (KeyValuePair<string, object> sp in SqlParametri)
+                    {
+                        komanda.Parameters.AddWithValue(sp.Key, sp.Value);
+                    }
+                konekcija.Open();
+                dObj = komanda.ExecuteScalar();
+                konekcija.Close();
+            }
+            return dObj;
         }
     }
 }

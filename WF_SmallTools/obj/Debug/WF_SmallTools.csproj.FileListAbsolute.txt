@@ -20,3 +20,5 @@ D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csprojRe
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Test.resources
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Properties.Resources.resources
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csproj.GenerateResource.Cache
+d:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\RdlCompile.cache
+d:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\RdlCompile.compiled

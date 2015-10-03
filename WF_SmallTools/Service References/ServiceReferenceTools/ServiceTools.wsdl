@@ -27,6 +27,12 @@
   <wsdl:message name="IServiceTools_VratiSet_OutputMessage">
     <wsdl:part name="parameters" element="tns:VratiSetResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceTools_VratiObjekat_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiObjekat" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTools_VratiObjekat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiObjekatResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceTools">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceTools/DoWork" message="tns:IServiceTools_DoWork_InputMessage" />
@@ -39,6 +45,10 @@
     <wsdl:operation name="VratiSet">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceTools/VratiSet" message="tns:IServiceTools_VratiSet_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceTools/VratiSetResponse" message="tns:IServiceTools_VratiSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiObjekat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTools/VratiObjekat" message="tns:IServiceTools_VratiObjekat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTools/VratiObjekatResponse" message="tns:IServiceTools_VratiObjekat_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceTools" type="tns:IServiceTools">
@@ -63,6 +73,15 @@
     </wsdl:operation>
     <wsdl:operation name="VratiSet">
       <soap:operation soapAction="http://tempuri.org/IServiceTools/VratiSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiObjekat">
+      <soap:operation soapAction="http://tempuri.org/IServiceTools/VratiObjekat" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

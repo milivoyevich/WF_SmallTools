@@ -20,5 +20,8 @@ namespace WcfServiceTools
 
         [OperationContract]
         DataSet VratiSet(string StoreProc, Dictionary<string, object> SqlParametri);
+
+        [OperationContract]
+        object VratiObjekat(string StoreProc, Dictionary<string, object> SqlParametri);
     }    
 }
