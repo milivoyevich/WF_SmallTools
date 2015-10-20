@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WF_SmallTools.ServiceReferenceTools;
+using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace WF_SmallTools
 {
@@ -64,6 +66,17 @@ namespace WF_SmallTools
             Dictionary<string, object> Parametri = new Dictionary<string, object>();
             Parametri.Add("@param1", kol);
             lblNumer.Text = klijent.VratiObjekat("Get_CountOfTeritories", Parametri).ToString();
+        }
+
+        private void tcExamples_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (((TabControl)sender).SelectedTab == tpBaze)
+            {
+                MessageBox.Show(tpBaze.Text);
+                SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+                DataTable table = instance.GetDataSources();
+                dataGridView1.DataSource = table;
+            }
         }
     }
 }
