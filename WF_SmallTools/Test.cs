@@ -72,11 +72,17 @@ namespace WF_SmallTools
         {
             if (((TabControl)sender).SelectedTab == tpBaze)
             {
-                MessageBox.Show(tpBaze.Text);
+                //MessageBox.Show(tpBaze.Text);
                 SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
                 DataTable table = instance.GetDataSources();
                 dataGridView1.DataSource = table;
             }
+        }
+
+        private void btnSpisakServera_Click(object sender, EventArgs e)
+        {
+            fSpisakServera forma = new fSpisakServera(dsProject1.SqlServeri);
+            forma.ShowDialog();
         }
     }
 }

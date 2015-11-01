@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsProject" targetNamespace="http://tempuri.org/dsProject.xsd" xmlns:mstns="http://tempuri.org/dsProject.xsd" xmlns="http://tempuri.org/dsProject.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsProject" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsProject" msprop:Generator_UserDSName="dsProject">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SqlServeri" msprop:Generator_TableClassName="SqlServeriDataTable" msprop:Generator_TableVarName="tableSqlServeri" msprop:Generator_RowChangedName="SqlServeriRowChanged" msprop:Generator_TablePropName="SqlServeri" msprop:Generator_RowDeletingName="SqlServeriRowDeleting" msprop:Generator_RowChangingName="SqlServeriRowChanging" msprop:Generator_RowEvHandlerName="SqlServeriRowChangeEventHandler" msprop:Generator_RowDeletedName="SqlServeriRowDeleted" msprop:Generator_RowClassName="SqlServeriRow" msprop:Generator_UserTableName="SqlServeri" msprop:Generator_RowEvArgName="SqlServeriRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Server" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Server" msprop:Generator_ColumnVarNameInTable="columnServer" msprop:Generator_ColumnPropNameInTable="ServerColumn" msprop:Generator_UserColumnName="Server" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Instanca" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Instanca" msprop:Generator_ColumnVarNameInTable="columnInstanca" msprop:Generator_ColumnPropNameInTable="InstancaColumn" msprop:Generator_UserColumnName="Instanca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OdPoverenja" msprop:Generator_ColumnVarNameInTable="columnOdPoverenja" msprop:Generator_ColumnPropNameInRow="OdPoverenja" msprop:Generator_ColumnPropNameInTable="OdPoverenjaColumn" msprop:Generator_UserColumnName="OdPoverenja" type="xs:boolean" default="false" />
+              <xs:element name="Korisnik" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Korisnik" msprop:Generator_ColumnVarNameInTable="columnKorisnik" msprop:Generator_ColumnPropNameInTable="KorisnikColumn" msprop:Generator_UserColumnName="Korisnik" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lozinka" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Lozinka" msprop:Generator_ColumnVarNameInTable="columnLozinka" msprop:Generator_ColumnPropNameInTable="LozinkaColumn" msprop:Generator_UserColumnName="Lozinka" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -61,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\NORTHWIND.mdf" />
+    <Content Include="App_Data\NORTHWIND_log.ldf">
+      <DependentUpon>NORTHWIND.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\SampleDb.mdf" />
     <Content Include="App_Data\SampleDb_log.ldf">
       <DependentUpon>SampleDb.mdf</DependentUpon>

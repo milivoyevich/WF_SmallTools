@@ -22,3 +22,17 @@ D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Properti
 D:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csproj.GenerateResource.Cache
 d:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\RdlCompile.cache
 d:\dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\RdlCompile.compiled
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe.config
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.exe
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.pdb
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.exe
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\WF_SmallTools.pdb
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\ClassLibraryTools.dll
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\bin\Debug\ClassLibraryTools.pdb
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csprojResolveAssemblyReference.cache
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Test.resources
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.Properties.Resources.resources
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.csproj.GenerateResource.Cache
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\RdlCompile.cache
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\RdlCompile.compiled
+E:\Dokumenti\GitHub\WF_SmallTools\WF_SmallTools\obj\Debug\WF_SmallTools.fSpisakServera.resources

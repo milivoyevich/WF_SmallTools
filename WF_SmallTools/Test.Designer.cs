@@ -43,24 +43,28 @@
             this.btnTabela = new System.Windows.Forms.Button();
             this.dgProcedure = new System.Windows.Forms.DataGrid();
             this.tpBaze = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbServer0 = new System.Windows.Forms.ComboBox();
-            this.cbBaza0 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbBaza1 = new System.Windows.Forms.ComboBox();
             this.cbServer1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbBaza0 = new System.Windows.Forms.ComboBox();
+            this.cbServer0 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnSpisakServera = new System.Windows.Forms.Button();
+            this.dsProject1 = new WF_SmallTools.dsProject();
             this.tcExamples.SuspendLayout();
             this.tpProcedure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgProcedure)).BeginInit();
             this.tpBaze.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dsProject1)).BeginInit();
             this.SuspendLayout();
             // 
             // msGlavni
@@ -205,6 +209,8 @@
             // tpBaze
             // 
             this.tpBaze.BackColor = System.Drawing.Color.RosyBrown;
+            this.tpBaze.Controls.Add(this.btnSpisakServera);
+            this.tpBaze.Controls.Add(this.label7);
             this.tpBaze.Controls.Add(this.dataGridView1);
             this.tpBaze.Controls.Add(this.groupBox2);
             this.tpBaze.Controls.Add(this.groupBox1);
@@ -215,52 +221,13 @@
             this.tpBaze.TabIndex = 1;
             this.tpBaze.Text = "Поређење база";
             // 
-            // groupBox1
+            // dataGridView1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.cbBaza0);
-            this.groupBox1.Controls.Add(this.cbServer0);
-            this.groupBox1.Location = new System.Drawing.Point(18, 19);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(293, 83);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Контролна база";
-            // 
-            // cbServer0
-            // 
-            this.cbServer0.FormattingEnabled = true;
-            this.cbServer0.Location = new System.Drawing.Point(22, 43);
-            this.cbServer0.Name = "cbServer0";
-            this.cbServer0.Size = new System.Drawing.Size(121, 21);
-            this.cbServer0.TabIndex = 0;
-            // 
-            // cbBaza0
-            // 
-            this.cbBaza0.FormattingEnabled = true;
-            this.cbBaza0.Location = new System.Drawing.Point(149, 43);
-            this.cbBaza0.Name = "cbBaza0";
-            this.cbBaza0.Size = new System.Drawing.Size(121, 21);
-            this.cbBaza0.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(23, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Сервер";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(159, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "База";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 146);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(617, 222);
+            this.dataGridView1.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -296,7 +263,7 @@
             // cbBaza1
             // 
             this.cbBaza1.FormattingEnabled = true;
-            this.cbBaza1.Location = new System.Drawing.Point(149, 43);
+            this.cbBaza1.Location = new System.Drawing.Point(162, 43);
             this.cbBaza1.Name = "cbBaza1";
             this.cbBaza1.Size = new System.Drawing.Size(121, 21);
             this.cbBaza1.TabIndex = 1;
@@ -304,18 +271,83 @@
             // cbServer1
             // 
             this.cbServer1.FormattingEnabled = true;
-            this.cbServer1.Location = new System.Drawing.Point(22, 43);
+            this.cbServer1.Location = new System.Drawing.Point(6, 43);
             this.cbServer1.Name = "cbServer1";
-            this.cbServer1.Size = new System.Drawing.Size(121, 21);
+            this.cbServer1.Size = new System.Drawing.Size(150, 21);
             this.cbServer1.TabIndex = 0;
             // 
-            // dataGridView1
+            // groupBox1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 146);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(600, 222);
-            this.dataGridView1.TabIndex = 2;
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.cbBaza0);
+            this.groupBox1.Controls.Add(this.cbServer0);
+            this.groupBox1.Location = new System.Drawing.Point(10, 19);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(310, 83);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Контролна база";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(159, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "База";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(23, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Сервер";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbBaza0
+            // 
+            this.cbBaza0.FormattingEnabled = true;
+            this.cbBaza0.Location = new System.Drawing.Point(164, 43);
+            this.cbBaza0.Name = "cbBaza0";
+            this.cbBaza0.Size = new System.Drawing.Size(131, 21);
+            this.cbBaza0.TabIndex = 1;
+            // 
+            // cbServer0
+            // 
+            this.cbServer0.FormattingEnabled = true;
+            this.cbServer0.Location = new System.Drawing.Point(8, 43);
+            this.cbServer0.Name = "cbServer0";
+            this.cbServer0.Size = new System.Drawing.Size(150, 21);
+            this.cbServer0.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(8, 120);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(297, 23);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Списак аутодетектованих сервера";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSpisakServera
+            // 
+            this.btnSpisakServera.BackColor = System.Drawing.Color.MistyRose;
+            this.btnSpisakServera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpisakServera.Location = new System.Drawing.Point(10, 374);
+            this.btnSpisakServera.Name = "btnSpisakServera";
+            this.btnSpisakServera.Size = new System.Drawing.Size(167, 27);
+            this.btnSpisakServera.TabIndex = 4;
+            this.btnSpisakServera.Text = "Додавање сервера на листу";
+            this.btnSpisakServera.UseVisualStyleBackColor = false;
+            this.btnSpisakServera.Click += new System.EventHandler(this.btnSpisakServera_Click);
+            // 
+            // dsProject1
+            // 
+            this.dsProject1.DataSetName = "dsProject";
+            this.dsProject1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Test
             // 
@@ -337,9 +369,10 @@
             this.tpProcedure.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgProcedure)).EndInit();
             this.tpBaze.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dsProject1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,6 +405,9 @@
         private System.Windows.Forms.ComboBox cbBaza0;
         private System.Windows.Forms.ComboBox cbServer0;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnSpisakServera;
+        private System.Windows.Forms.Label label7;
+        private dsProject dsProject1;
     }
 }
 
